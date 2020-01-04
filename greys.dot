@@ -1,0 +1,57 @@
+/*
+ *  Relationships on Grey's Anatomy
+ */
+
+graph G {
+  layout=neato
+
+
+  subgraph season_0 {
+    label="Season 0" // before the show started
+    adele -- richard -- ellis -- thatcher -- susan
+    derek -- addison -- mark 
+    miranda -- tucker [penwidth=2]
+
+    // children and parents
+    ellis    -- meredith [ style=dotted dir=forward arrowhead=normal]
+    thatcher -- meredith [ style=dotted dir=forward arrowhead=normal]
+    susan    -- molly    [ style=dotted dir=forward arrowhead=normal]
+    thatcher -- molly    [ style=dotted dir=forward arrowhead=normal]
+    susan    -- lexie    [ style=dotted dir=forward arrowhead=normal]
+    thatcher -- lexie    [ style=dotted dir=forward arrowhead=normal]
+  }
+
+
+  subgraph season_1 {
+    label="Season 1"
+    meredith -- derek
+    christina -- burke
+    george -- olivia -- alex
+  }
+  
+  subgraph season_2 {
+    label="Season 2"
+    george -- meredith
+    meredith -- finn [style=dashed]
+    alex -- izzie
+    izzie -- denny [style=dashed]
+    george -- callie
+    erica
+  }
+
+  subgraph season_3 {
+    label="Season 3"
+    mark -- callie
+    george -- izzie 
+  }
+
+  subgraph season_4 {
+    label="Season 4"
+    derek -- rose
+    alex -- rebecca
+    callie -- erica
+  }
+
+}
+
+

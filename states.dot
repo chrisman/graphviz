@@ -1,0 +1,164 @@
+// https://twitter.com/KirillOsenkov/status/1212541015019536384
+
+graph States {
+  layout=fdp
+
+
+  WA [pos="0,10"]
+  OR [pos="0,9"]
+  CA [pos="0,6"]
+  NV [pos="1,7"]
+  ID [pos="1,10"]
+  MT [pos="2,10"]
+  WY [pos="2,9"]
+  UT [pos="2,7"]
+  AZ [pos="2,5"]
+  CO [pos="3,7"]
+  NM [pos="3,6"]
+  ND [pos="4,10"]
+  SD [pos="4,9"]
+  NE [pos="4,8"]
+  KS [pos="4,7"]
+  OK [pos="4,6"]
+  TX [pos="4,5"]
+  MN [pos="5,10"]
+  IA [pos="5,9"]
+  MO [pos="5,8"]
+  AR [pos="5,6"]
+  LA [pos="5,5"]
+  MS [pos="6,5"]
+  WI [pos="6,10"]
+  IL [pos="6,9"]
+  IN [pos="7,9"]
+  OH [pos="8,9"]
+  KY [pos="6,8"]
+  TN [pos="6,7"]
+  AL [pos="6,6"]
+  GA [pos="7,6"]
+  FL [pos="7,5"]
+  MI [pos="7,10"]
+  WV [pos="8,8"]
+  PA [pos="9,9"]
+  VA [pos="9,7"]
+  NC [pos="9,6"]
+  SC [pos="9,5"]
+  NY [pos="10,10"]
+  NJ [pos="10,9"]
+  DE [pos="10,8"]
+  MD [pos="10,6"]
+  NJ [pos="11,7"]
+  VT [pos="12,10"]
+  MA [pos="12,9"]
+  CT [pos="12,8"]
+  NH [pos="13,10"]
+  RI [pos="13,8"]
+  ME [pos="14,10"]
+
+
+  AL -- FL
+  AL -- GA
+  AR -- LA
+  AR -- MS
+  AR -- TN
+  CA -- AZ
+  CO -- AZ
+  CO -- KS
+  CO -- NE
+  CO -- NM
+  CO -- OK
+  CT -- RI
+  FL -- GA
+  IA -- IL
+  IA -- MO
+  IA -- WI
+  ID -- MT
+  ID -- NV
+  ID -- UT
+  ID -- WY
+  IL -- IN
+  IL -- KY
+  IN -- KY
+  IN -- OH
+  KS -- MO
+  KS -- OK
+  KY -- OH
+  KY -- TN
+  KY -- VA
+  KY -- WV
+  LA -- MS
+  MA -- CT
+  MA -- RI
+  MD -- DE
+  MI -- IN
+  MI -- OH
+  MN -- IA
+  MN -- WI
+  MO -- AR
+  MO -- IL
+  MO -- KY
+  MO -- TN
+  MS -- AL
+  MS -- TN
+  MT -- ND
+  MT -- SD
+  MT -- WY
+  NC -- GA
+  NC -- SC
+  ND -- MN
+  ND -- SD
+  NE -- IA
+  NE -- KS
+  NE -- MO
+  NH -- ME
+  NJ -- DE
+  NJ -- NY
+  NM -- AZ
+  NM -- OK
+  NM -- TX
+  NV -- AZ
+  NV -- CA
+  NV -- UT
+  NY -- CT
+  NY -- MA
+  NY -- VT
+  OH -- PA
+  OH -- WV
+  OK -- AR
+  OK -- MO
+  OK -- TX
+  OR -- CA
+  OR -- ID
+  OR -- NV
+  PA -- DE
+  PA -- MD
+  PA -- NJ
+  PA -- NY
+  PA -- WV
+  SC -- GA
+  SD -- IA
+  SD -- MN
+  SD -- NE
+  TN -- AL
+  TN -- GA
+  TN -- NC
+  TN -- VA
+  TX -- AR
+  TX -- LA
+  UT -- AZ
+  UT -- CO
+  UT -- NM
+  UT -- WY
+  VA -- MD
+  VA -- NC
+  VT -- MA
+  VT -- NH
+  WA -- ID
+  WA -- OR
+  WI -- IL
+  WI -- MI
+  WV -- MD
+  WV -- VA
+  WY -- CO
+  WY -- NE
+  WY -- SD
+}

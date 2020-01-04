@@ -1,0 +1,15 @@
+digraph {
+  label="Rock Paper Scissors Spock Lizard"
+  layout=circo
+
+  rock     -> scissors // [label=crushes]
+  rock     -> lizard   // [label=crushes]
+  paper    -> rock     // [label=covers]
+  paper    -> spock    // [label=disproves]
+  scissors -> paper    // [label=cut]
+  scissors -> lizard   // [label=decapitates]
+  lizard   -> spock    // [label=poisons]
+  lizard   -> paper    // [label=eats]
+  spock    -> scissors // [label=smashes]
+  spock    -> rock     // [label=vaporizes]
+}

@@ -1,0 +1,8 @@
+digraph {
+all markup
+markup index.html $(htmls)
+index.html src/index.md
+posts/%.html src/posts/%.md
+clean index.html $(wildcard posts/*.html)
+digraph {
+}

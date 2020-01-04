@@ -1,0 +1,32 @@
+#!/usr/bin/env node
+
+const header = `digraph {\n`
+const footer = `\n}`
+
+process.stdin.on('readable', d => {
+
+  let chunk
+  let data = ''
+
+  while ((chunk = process.stdin.read()) !== null) {
+    data += chunk
+  }
+
+  const dots = header + data
+    .split('\n')
+    .filter(s => s.length > 0)
+    .map(s => s.split(/(\s)(?=(?:[^\)]|\([^\)]*\))*$)/)) // https://regexr.com/4rl4o
+    .map(a => a.filter(s => s !== ' '))
+    .map(([ value, ...keys ]) => {
+      const r = []
+      keys.forEach(key => {
+        r.push(`${key} -> ${value}`)
+      })
+      return r
+    })
+    .reduce((acc, x) => acc.concat(x), [])
+    .join('\n') + footer
+
+  process.stdout.write(dots)
+}); 
+

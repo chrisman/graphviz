@@ -3,30 +3,29 @@
 const header = `digraph {\n`
 const footer = `\n}`
 
-process.stdin.on('readable', d => {
+let data = ''
 
-  let chunk
-  let data = ''
+process.stdin.on('data', d => {
+  data += d
+})
 
-  while ((chunk = process.stdin.read()) !== null) {
-    data += chunk
-  }
+process.stdin.on('end', () => {
+  process.stdout.write(header + main(data) + footer)
+})
 
-  const dots = header + data
-    .split('\n')
-    .filter(s => s.length > 0)
-    .map(s => s.split(/(\s)(?=(?:[^\)]|\([^\)]*\))*$)/)) // https://regexr.com/4rl4o
-    .map(a => a.filter(s => s !== ' '))
-    .map(([ value, ...keys ]) => {
-      const r = []
-      keys.forEach(key => {
-        r.push(`${key} -> ${value}`)
-      })
-      return r
+const main = str => str
+  .split('\n')
+  .filter(s => s.length > 0)
+  // holy regex! annotated: https://regexr.com/4rltv
+  .map(s => s.split(/(\s)(?=(?:[^\)]|\([^\)]*\))*$)/))
+  .map(a => a.filter(s => s !== ' '))
+  .map(([ value, ...keys ]) => {
+    const r = []
+    keys.forEach(key => {
+      r.push(`"${key}" -> "${value}"`)
     })
-    .reduce((acc, x) => acc.concat(x), [])
-    .join('\n') + footer
-
-  process.stdout.write(dots)
-}); 
+    return r
+  })
+  .reduce((acc, x) => acc.concat(x), [])
+  .join('\n')
 

@@ -1,0 +1,34 @@
+digraph {
+Normal -> { Rock Steel} [style=dashed]
+Normal -> Ghost [style=dotted]
+Fire -> { Fire Water Rock Dragon } [style=dashed]
+Fire -> { Grass Ice Bug Steel }
+Water -> { Fire Ground Rock }
+Water -> { Water Grass Dragon } [style=dashed]
+Electric -> { Water Flying }
+Electric -> { Electric Grass Dragon } [style=dashed]
+Electric -> { Ground } [style=dotted]
+Grass -> { Water Ground Rock }
+Grass -> { Fire Grass Poison Flying Bug Dragon Steel } [style=dashed]
+Ice -> { Grass Ground Flying Dragon }
+Ice -> { Fire Water Ice Steel } [style=dashed]
+Fighting -> { Normal Ice Rock Dark Steel }
+Fighting -> { Poison Flying Psychic Bug Fairy } [style=dashed]
+Fighting -> { Ghost } [style=dotted]
+Poison -> { Grass Fairy }
+Poison -> { Poison Ground Rock Ghost } [style=dashed]
+Poison -> { Steel } [style=dotted]
+Ground -> { Fire Electric Poison Rock Steel }
+Ground -> { Grass Bug } [style=dashed]
+Ground -> { Flying } [style=dotted]
+Flying -> { Grass Fighting Bug }
+Flying -> { Electric Rock Steel } [style=dashed]
+Psychic
+Bug
+Rock
+Ghost
+Dragon
+Dark
+Steel
+Fairy
+}

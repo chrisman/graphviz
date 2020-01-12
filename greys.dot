@@ -10,7 +10,7 @@ graph G {
     label="Season 0" // before the show started
     adele -- richard -- ellis -- thatcher -- susan
     derek -- addison -- mark 
-    miranda -- tucker [penwidth=2]
+    miranda -- tucker
 
     // children and parents
     ellis    -- meredith [ style=dotted dir=forward arrowhead=normal]
@@ -31,10 +31,10 @@ graph G {
   
   subgraph season_2 {
     label="Season 2"
-    george -- meredith
-    meredith -- finn [style=dashed]
+    george -- meredith // meredith cried and cried and broke george
+    meredith -- finn [style=dashed] // dated. never boinked.
     alex -- izzie
-    izzie -- denny [style=dashed]
+    izzie -- denny [style=dashed] // engaged. never boinked.
     george -- callie
     erica
   }
@@ -42,7 +42,8 @@ graph G {
   subgraph season_3 {
     label="Season 3"
     mark -- callie
-    george -- izzie 
+    george -- izzie  // after george and callie got married!
+    alex -- addison
   }
 
   subgraph season_4 {

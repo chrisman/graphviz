@@ -1,0 +1,14 @@
+digraph {
+  compound=true
+
+  "team member manager"
+
+  subgraph cluster0 {
+    edge[style=invis]
+    "team member reports" -> "team member peers"
+  }
+
+  "team member manager" -> "team member reports" [label="1. request for feedback" lhead=cluster0]
+  "team member reports" -> "team member manager" [label="2. feedback" ltail=cluster0]
+  "team member manager" -> "team member"         [label="3. feedback"]
+}

@@ -1,0 +1,11 @@
+digraph {
+"$(svgs)" -> "svg"
+"make2dot" -> "svg"
+"make.svg" -> "svg"
+"$(svgs)" -> "open"
+"make.svg" -> "open"
+"$(svgs)" -> "clean"
+"bin/make2dot" -> "make2dot"
+"Makefile" -> "make2dot"
+"make.dot" -> "make2dot"
+}

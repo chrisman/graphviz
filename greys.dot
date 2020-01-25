@@ -11,6 +11,7 @@ graph G {
     adele -- richard -- ellis -- thatcher -- susan
     derek -- addison -- mark 
     miranda -- tucker
+    christina -- marlowe
 
     // children and parents
     ellis    -- meredith [ style=dotted dir=forward arrowhead=normal]

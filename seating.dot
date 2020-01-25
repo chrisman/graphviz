@@ -1,0 +1,49 @@
+graph {
+  label="Denver Seating Chart"
+
+  //layout=circo
+  graph [fontname = "Handlee"];
+  node [fontname = "Handlee"];
+  edge [fontname = "Handlee"];
+    
+  
+  
+  subgraph cluster_vail {
+    label="vail\n🟡"
+    
+    subgraph cluster_mobile {
+        label="Android"
+        carter; jenan; eugene
+    }
+    subgraph cluster_design {
+        label="design"
+        danny; kyle; lye; lindsay
+    }
+    danny -- eugene -- jenan -- carter -- paul -- kyle -- lindsay -- lye -- danny
+  }
+  
+  
+  
+  subgraph cluster_aspen {
+    label="aspen\n🟡🟡🟡"
+    sean -- jeremy -- craig -- kristi -- joel -- sean
+    joel [label="[joel]"]
+  }
+  
+  
+  
+  subgraph cluster_loveland {
+    label="loveland\n🟡🟡🟡🟡"
+    chris -- cody -- ben -- chris
+  }
+  
+  
+  
+  subgraph cluster_copper {
+    label="copper\n🟡🟡🟡🟡🟡"
+    drey -- savannah -- empty -- drey
+    empty [label=""]
+    savannah [label="[savannah]"]
+  }
+
+}

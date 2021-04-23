@@ -1,0 +1,123 @@
+digraph G {
+  layout="circo"
+
+  {
+      // Player Characters
+      node [color="black",
+        penwidth="4.0",
+        fontcolor="white",
+        style="filled",
+        fontsize="35.0"]
+      Mize
+      Fiona
+      JJ
+      Klak
+      Bigly
+      Revi
+  }
+  
+  {
+      // characters
+      node [shape="rectangle"]
+      clr [label="Charles Lee Ray"]
+      JD
+      snarl [label="Old Snarl"]
+      Coruthu
+      Roc
+      Giants
+      Enrique
+      Cutie
+      goo [label="Great Old One"]
+      colonel [label="Colonel Sanders"]
+  }
+  
+  {
+      // situations
+      node [shape="triangle"]
+      revenge [label="Petty Revenge"]
+      hardees [label="The Fall of Har'Dees"]
+      peaks [label="Destruction in Greystone Peaks"]
+      throwing [label="Throwing Large Things"]
+  }
+  
+  {
+      // assets
+      node [shape="parallelogram"]
+      buttstick [label="Butt Stick"]
+      Death
+      shop [label="Shop in Loudwater"]
+      cleft [label="Deadstone Cleft"]
+  }
+  
+  // mize
+  Mize -> Fiona [label="stressed by high effort"]
+  Mize -> JD [label="Why don't you live in a stick?"]
+  Mize -> clr [label="Why do you live in a stick?"]
+  Mize -> Coruthu [label="couldn't save"]
+  Mize -> Death [label="What is?"]
+  Mize -> Klak [label="Collecting friends from beyond the veil"]
+  Mize -> colonel [label="Biological step-father"]
+  Mize -> revenge [label="low effort plotting"]
+  revenge -> colonel [label="to be enacted on"]
+  clr -> Death [label="aspect of"]
+  
+  // jj
+  JJ -> Roc [label="Rode"]
+  JJ -> Death [label="Agent of"]
+  JJ -> Coruthu [label="Feels responsible for"]
+  JJ -> Fiona [label="Friends from nature camp"]
+  JJ -> JD [label="Pet/Friend"]
+  JJ -> Giants [label="Bitter Enemies"]
+  
+  // bigly
+  Bigly -> Giants [label="Not impressed with"]
+  Bigly -> buttstick
+  Bigly -> hardees
+  Bigly -> throwing
+  Bigly -> Cutie [label="caretaker and guardian of"]
+  buttstick -> hardees
+  hardees -> Teleportation [label="involved?"]
+  
+  // fiona
+  Fiona -> Zookeeper [label="Trained under"]
+  Fiona -> Mize [label="stressed by low effort"]
+  Fiona -> Shrooms [label="accitental trip; had a vision"]
+  Fiona -> JD [label="loves animals"]
+  Fiona -> Cutie [label="babysits"]
+  Fiona -> clr [label="Loves animals, hates ghosts"]
+  Fiona -> Coruthu [label="Do not ressurect"]
+  Fiona -> Death [label="is Final!"]
+  Fiona -> peaks [label="prophesized"]
+  Zookeeper -> Coruthu [label="???"]
+  
+  // klak
+  goo -> Klak [label="Patron"]
+  Bartholomew -> Klak [label="Familiar"]
+  Klak -> snarl [label="had staff stolen by"]
+  Klak -> Coruthu [label="hoarding body of"]
+  Klak -> Teleportation [label="has visions during"]
+  goo -> Teleportation [label="appears during"]
+  Bartholomew -> goo [label="gift from"]
+  snarl -> Giants [label="help defeat?"]
+  snarl -> Coruthu [label="bring back?"]
+  
+  // revi
+  Revi -> colonel [label="built oil-boiler for, stiffed by"]
+  Revi -> revenge [label="wants in on"]
+  Revi -> cleft [label="wtf"]
+  Revi -> Roc [label="so majestic"]
+  Revi -> peaks [label="witness to"]
+  Revi -> shop [label="appenticeship"]
+  shop -> Teleportation [label="researches"]
+  cleft -> peaks [label="responsible for"]
+  cleft -> Giants
+  cleft -> Coruthu [label="killed"]
+  
+  // enrique
+  Enrique -> colonel [label="rivals"]
+  Enrique -> Teleportation [label="master of"]
+  Enrique -> Zookeeper [label="friends"]
+  Enrique -> buttstick [label="previous owner of?"]
+  Enrique -> hardees [label="present at?"]
+  
+}
